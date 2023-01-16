@@ -1,6 +1,35 @@
-/* .statistics{}
-.title{}
-.stat_list{}
-.item{}
-.label{}
-.percentage{} */
+.statistics{
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.title{
+    display: flex;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+}
+.stat_list{
+    display: flex;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+}
+.label{
+    font-size: small;
+}
+.percentage{
+    font-size: large;
+}
