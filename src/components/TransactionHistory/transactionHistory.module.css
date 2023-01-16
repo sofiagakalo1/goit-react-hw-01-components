@@ -1,1 +1,21 @@
-/* .transaction_history{} */
+.transaction_history {
+  width: 400px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.table_list {
+  height: 40px;
+  text-align: center;
+  background-color: rgb(58, 143, 253);
+  font-weight: 600;
+  color: #fff;
+}
+.table_item {
+  text-transform: capitalize;
+  height: 40px;
+  text-align: center;
+  color: rgb(98, 99, 116);
+}
+.table_item:nth-child(2n) {
+  background-color: rgb(145, 198, 233);
+}

@@ -5,23 +5,23 @@ export const TransactionHistory = ({ items }) => {
   return (
     <table className={css.transaction_history}>
       <thead>
-        <tr>
+        <tr className={css.table_list}>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>
         </tr>
       </thead>
-      {items.map(({ id, type, amount, currency }) => {
-        return (
-          <tbody>
-            <tr key={id}>
+      <tbody>
+        {items.map(({ id, type, amount, currency }) => {
+          return (
+            <tr key={id} className={css.table_item}>
               <td>{type}</td>
               <td>{amount}</td>
               <td>{currency}</td>
             </tr>
-          </tbody>
-        );
-      })}
+          );
+        })}
+      </tbody>
     </table>
   );
 };
